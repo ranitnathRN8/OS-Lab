@@ -1,0 +1,12 @@
+## The following steps are to remove any preexisting mariadb and mysql installations completely.
+
+sudo service mysql stop
+sudo apt-get --purge remove "mysql*"
+sudo rm -rf /etc/mysql/ 
+sudo updatedb
+
+## The following steps are to install a fresh copy of mysql-server 
+
+sudo apt-get install mysql-server
+
+## When prompted to set a password, set the password as "password"
